@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery</title>
+</head>
+<body >
+	<div id="d1" style="; padding: 30px ; background: #e3e3e3">
+		<p id="p1" style="display: none">
+			Click here
+		</p>
+	</div>
+	<br/>
+
+		<button id="btn">
+			Submit
+		</button>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$("#btn").click(function(){
+					//$("#p1").hide(2000);
+					//$(this).hide(2000);
+					//$("#p1").show(2000);
+					//$("#p1").toggle(2000);
+					//$("#p1").fadeToggle(2000);
+					//$("#p1").fadeTo(2000,0.4);
+					//$("#d1").slideUp();
+					$("#p1").slideToggle(2000);
+
+
+				})8
+			});
+
+		</script>
+</body>
+</html>

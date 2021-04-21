@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Control Demo</title>
+	<<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+		<div id="page1" data-role="page">
+			<div data-role="main" class="ui-content">
+			<p> Sample Text</p>
+			<input id="viewBtn" type="Submit" value="LOGIN" data-inline="true"> 
+
+			<p>Sample Text</p>
+			<div id="content">
+
+				<button id="btn1" data-inline="true ">VIEW CONTENT</button>
+				<div id="termsBtn"></div>
+			</div>
+
+
+			<p>LEFT ARROW</p>
+			<button id="ArrwLeft" data-iconpos="top" data-inline="true" data-icon="arrow-l">
+			</button>
+
+			<p>STAR</p>
+			<button id="ArrwLeft" data-inline="true" data-icon="star"></button>
+		</div>
+
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#viewBtn").bind("click",function(event,ui){
+					var str="HI EVERYONE";
+					$("#content").html(str);
+
+				});
+				$("#btn1").bind("click",function(event,ui){
+					var str="<button id='agreebtn'> Agree To Term </button>";
+					$("#termsBtn").html(str);
+
+				});
+			});
+		</script>
+</body>
+</html>

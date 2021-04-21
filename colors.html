@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<canvas id="myCanvas" height="250" width="500" style="border: 1px solid"></canvas>
+
+	<script type="text/javascript">
+		var c =document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+
+		ctx.fillStyle="red";
+		ctx.fillRect(10,10,100,100);
+		ctx.translate(50,25);
+
+		ctx.fillStyle="blue";
+		ctx.fillRect(10,10,100,100);
+		ctx.translate(50,25);
+
+		ctx.fillStyle="green";
+		ctx.fillRect(10,10,100,100);
+		ctx.translate(50,25);
+		
+	</script>
+
+</body>
+</html>

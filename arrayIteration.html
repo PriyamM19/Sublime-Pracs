@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://code.angularjs.org/1.2.15/angular.min.js"></script>
+</head>
+<body>
+	<body style="background: #f5e799; font-family: Verdana; font-size: 16px;">
+		<div ng-app="" ng-init="Student_Marks=[85,94,67,78,59]">
+			<h3>Marks are as follows:</h3>
+			<ol style="list-style-type: none;">
+				<li ng-repeat="marks in Student_Marks">
+					<span>{{marks}}</span>
+				</li>
+			</ol>
+		</div>
+
+</body>
+</html>
